@@ -26,6 +26,7 @@ class BookProduct extends ShopProduct
    {
       return $this->numPages;
    }
+   
 
    public function getSummaryLine(): string 
    {
