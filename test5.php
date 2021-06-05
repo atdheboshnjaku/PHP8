@@ -29,7 +29,7 @@ $product = new BookProduct(
    numPages: 30
 );
 
-print "{$product->getNumberOfPages()}\n";
+print "{$product->getSummaryLine()}\n";
 
 
 
