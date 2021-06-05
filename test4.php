@@ -30,7 +30,7 @@ $product = new CdProduct(
    60.33
 );
 
-print "artist: {$product->getProducer()}\n";
+print "artist: {$product->getSummaryLine()}\n";
 
 
 

@@ -22,12 +22,12 @@ class ShopProduct
       int $playLength = 0
    ) {
 
-      $this->title = $title;
-      $this->producerFirstName = $firstName;
-      $this->producerMainName = $mainName;
-      $this->price = $price;
-      $this->numPages = $numPages;
-      $this->playLength = $playLength;
+      $this->title               = $title;
+      $this->producerFirstName   = $firstName;
+      $this->producerMainName    = $mainName;
+      $this->price               = $price;
+      $this->numPages            = $numPages;
+      $this->playLength          = $playLength;
       
    }
 
@@ -51,6 +51,6 @@ class ShopProduct
 //    title: "Shop Catalogue"
 // );
 
-$product = new ShopProduct("title", "first", "main", "4.22");
+//$product = new ShopProduct("title", "first", "main", "4.22");
 
-print "{$product->getProducer()}\n";
+//print "{$product->getProducer()}\n";

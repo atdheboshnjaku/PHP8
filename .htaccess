@@ -1,0 +1,10 @@
+Options +FollowSymLinks -MultiViews
+RewriteEngine on
+
+# check & rewrite if a matching .php file exists
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]
+
+# Redirecting to the error page when nothing is found
+#ErrorDocument 404 /error

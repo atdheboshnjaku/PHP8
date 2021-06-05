@@ -19,13 +19,6 @@ class BookProduct extends ShopProduct
       return $base;
    }
 
-   public function getProducer(): string 
-   {
-      return $this->producerFirstName . " "
-      . $this->producerMainName;
-   }
-
-
 }
 
 $product = new BookProduct(
@@ -36,7 +29,7 @@ $product = new BookProduct(
    numPages: 30
 );
 
-print "{$product->getProducer()}\n";
+print "{$product->getSummaryLine()}\n";
 
 
 
