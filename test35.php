@@ -9,11 +9,18 @@ class Conf
 
     public function __construct(private string $file) 
     {
+        if(!file_exists($file)) {
+            throw new \Exception("file '{$file}' does not exist");
+        }
         $this->xml = simplexml_load_file($file);
     }
 
     public function write(): void 
     {
+        if(!is_writable($this->file)) {
+            throw new \Exception("file '{$this->file}' is not writeable");
+        }
+        print "{$this->file} is apparently writeable\n";
         file_put_contents($this->file, $this->xml->asXML());
     }
 
