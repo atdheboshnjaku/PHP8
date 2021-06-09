@@ -3,4 +3,4 @@
     <item name="user">bob</item>
     <item name="host">localhost</item>
     <item name="pass">newpass</item>
-</conf>
+<item name="newpass">pass</item></conf>
