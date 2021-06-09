@@ -13,6 +13,11 @@ class Sample
             print $e->getMessage();
         } catch (\Exception $e) {
 
+        } finally {
+            print "All good\n";
         }
     }
 }
+
+$t = new Sample();
+$t->init();
