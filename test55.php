@@ -1,5 +1,4 @@
 <?php 
-//besi
 ini_set("display_errors", "On");
 
 require_once("test51.php");
