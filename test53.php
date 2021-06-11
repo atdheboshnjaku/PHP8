@@ -2,6 +2,7 @@
 ini_set("display_errors", "On");
 
 require_once("test51.php");
+require_once("test54.php");
 
 class ProcessSale
 {
@@ -31,6 +32,20 @@ $processor->registerCallback($logger);
 $processor->sale(new Product("shoes", 6));
 print "\n";
 $processor->sale(new Product("coffee", 6));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
