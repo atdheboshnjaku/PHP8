@@ -2,7 +2,7 @@
 ini_set("display_errors", "On");
 
 require_once("test51.php");
-require_once("test56.php");
+require_once("test61.php");
 
 class ProcessSale
 {
@@ -24,9 +24,9 @@ class ProcessSale
 
 }
 
+$totalizer3 = new Totalizer3();
 $processor = new ProcessSale();
-
-$processor->registerCallback(Totalizer::warnAmount());
+$processor->registerCallback($totalizer3->warnAmount(8));
 
 $processor->sale(new Product("shoes", 6));
 print "\n";

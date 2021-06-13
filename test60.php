@@ -2,7 +2,6 @@
 ini_set("display_errors", "On");
 
 require_once("test51.php");
-require_once("test56.php");
 
 class ProcessSale
 {
@@ -24,9 +23,11 @@ class ProcessSale
 
 }
 
-$processor = new ProcessSale();
+$markup = 3;
+$counter = fn(Product $product) => print "($product->name) marked up price: " . ($product->price + $markup) . "\n";
 
-$processor->registerCallback(Totalizer::warnAmount());
+$processor = new ProcessSale();
+$processor->registerCallback($counter);
 
 $processor->sale(new Product("shoes", 6));
 print "\n";
