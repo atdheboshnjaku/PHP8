@@ -5,7 +5,7 @@ class Blah
 
     public function wave(): void 
     {
-        print "saying hi from root";
+        print "saying hi from Root";
     }
 
 }
