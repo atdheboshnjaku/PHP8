@@ -34,15 +34,11 @@ $person->output(
         }
 
         public function write(Person $person): void 
-        {
-            try {
-                file_put_contents($this->path, $person->getName() . " " . $person->getAge() . "\n");    
-            } catch \Exception("No file path found here: {$path}") {
-
-            }
+        {            
+            file_put_contents($this->path, $person->getName() . " " . $person->getAge() . "\n");    
+        }
             
         }
-    }
 );
 
 
