@@ -32,6 +32,14 @@ class CdProduct
         print $product->$method();
     }
 
+    public function getSummaryLine(): string 
+    {
+        $base  = "{$this->title} ( {$this->producerMainName}, ";
+        $base .= "{$this->producerFirstName} )";
+        $base .= ": playing time - {$this->playLength}";
+        return $base;
+    }
+
 }
 
 $cd = new CdProduct("cd1", "bob", "bobbleson", 4, 50);
