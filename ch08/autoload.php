@@ -9,5 +9,5 @@ $basic = function(string $classname) {
 
 \spl_autoload_register($basic);
 
-$blah = new Blah();
-$blah->wave();
+// $blah = new Blah();
+// $blah->wave();
