@@ -34,10 +34,10 @@ abstract class Lesson
 
 }
 
-$lessons[] = new Seminar(4, new TimedCostStrategy());
-$lessons[] = new Lecture(4, new FixedCostStrategy());
+// $lessons[] = new Seminar(5, new TimedCostStrategy());
+// $lessons[] = new Lecture(4, new FixedCostStrategy());
 
-foreach($lessons as $lesson) {
-    print "Lesson charge {$lesson->cost()}. ";
-    print "Charge type: {$lesson->chargeType()}<br>";
-}
+// foreach($lessons as $lesson) {
+//     print "Lesson charge {$lesson->cost()}. ";
+//     print "Charge type: {$lesson->chargeType()}<br>";
+// }
