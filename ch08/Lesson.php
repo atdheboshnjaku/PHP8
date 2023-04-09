@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 require_once("autoload.php");
 
-
 abstract class Lesson 
 {
 
@@ -39,6 +38,6 @@ $lessons[] = new Seminar(4, new TimedCostStrategy());
 $lessons[] = new Lecture(4, new FixedCostStrategy());
 
 foreach($lessons as $lesson) {
-    print "lesson charge {$lesson->cost()}. ";
+    print "Lesson charge {$lesson->cost()}. ";
     print "Charge type: {$lesson->chargeType()}<br>";
 }
